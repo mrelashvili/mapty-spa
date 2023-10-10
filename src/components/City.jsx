@@ -2,6 +2,8 @@ import styles from './City.module.css';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { useCities } from '../contexts/CitiesContext';
+import Spinner from './Spinner';
+import BackButton from './BackButton';
 
 const formatDate = (date) =>
   new Intl.DateTimeFormat('en', {
@@ -20,11 +22,13 @@ function City() {
   //   date: '2027-10-31T15:59:59.138Z',
   //   notes: 'My favorite city so far!',
   // };
-  const { getCity, currentCity } = useCities();
+  const { getCity, currentCity, isLoading } = useCities();
 
   useEffect(() => {
     getCity(id);
   }, [id]);
+
+  if (isLoading) return <Spinner />;
 
   const { cityName, emoji, date, notes } = currentCity;
 
@@ -60,7 +64,9 @@ function City() {
         </a>
       </div>
 
-      <div>12</div>
+      <div>
+        <BackButton />
+      </div>
     </div>
   );
 }
