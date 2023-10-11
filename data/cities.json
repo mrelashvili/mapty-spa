@@ -35,6 +35,42 @@
         "lng": 13.376933665713324
       },
       "id": 98443197
+    },
+    {
+      "cityName": "Paris",
+      "country": "France",
+      "emoji": "🇫🇷",
+      "date": "2023-10-11T12:17:13.162Z",
+      "notes": "IRELAND! ",
+      "position": {
+        "lat": "48.864714761802794",
+        "lng": "2.3510742187500004"
+      },
+      "id": 98443198
+    },
+    {
+      "cityName": "Tbilisi",
+      "country": "Georgia",
+      "emoji": "🇬🇪",
+      "date": "2023-10-11T12:22:17.444Z",
+      "notes": "TBILISIII!!!",
+      "position": {
+        "lat": "41.69034777353792",
+        "lng": "44.823617935180664"
+      },
+      "id": 98443199
+    },
+    {
+      "cityName": "London",
+      "country": "United Kingdom of Great Britain and Northern Ireland (the)",
+      "emoji": "🇬🇧",
+      "date": "2023-10-11T12:31:14.125Z",
+      "notes": "Premier league! ",
+      "position": {
+        "lat": "51.53726013458968",
+        "lng": "-0.11939048767089845"
+      },
+      "id": 98443200
     }
   ]
 }
